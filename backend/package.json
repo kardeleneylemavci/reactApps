@@ -1,0 +1,45 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "start": "nodemon --exec babel-node src/index.js",
+    "start:prod": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@tinymce/tinymce-react": "^3.6.0",
+    "animated-scroll-to": "^2.0.10",
+    "babel-node": "^0.0.1-security",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "express-validation": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "helmet": "^3.14.0",
+    "http-status": "^1.2.0",
+    "install": "^0.13.0",
+    "joi": "^14.0.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.9",
+    "mongoose-error-handler": "^1.0.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.4.8",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "description": ""
+}
